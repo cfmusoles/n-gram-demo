@@ -40,7 +40,7 @@ Predicted word: capable of reason in conjunction with a refined British accent
 
 ### Limitations
 
-- The predictions are based on the previous word alone (though the length of the ngram can be > 2)
-- If the *seed_sentence* contains an unknown word (not in the corpus) the algorithm returns an empty word
+- Due to the small size of the corpus to work with, the predictions are based on the previous word alone (though the length of the ngram can be > 2).
+- If the *seed_sentence* contains an unknown word (not in the corpus) the algorithm returns an empty word as next prediction
 - Because it is based on a probabilistic model, the same input may yield different output every time
-- For this demo, the corpus is not filtered or cleaned
+- Only basic filtering of the corpus is done to remove punctuation tokens.
